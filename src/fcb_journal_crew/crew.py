@@ -1,15 +1,16 @@
 
 import os
+
+from dotenv import load_dotenv
+load_dotenv()
+
+os.environ["SERPER_API_KEY"] = os.getenv("SERPER_API_KEY")
+
+
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
 from crewai_tools import SerperDevTool
 
-from dotenv import load_dotenv
-
-load_dotenv()
-
-os.environ["SERPER_API_KEY"] = os.getenv("SERPER_API_KEY")
-print(os.getenv("SERPER_API_KEY"))
 
 @CrewBase
 class FcbJournalCrewCrew():
@@ -23,10 +24,22 @@ class FcbJournalCrewCrew():
 				verbose=True
 		)
 	
+	@agent
+	def sports_writer(self) -> Agent:
+		return Agent(
+				config=self.agents_config['sports_writer']
+		)
+	
 	@task
 	def fetch_next_game_task(self) -> Task:
 		return Task(
 			config=self.tasks_config['fetch_next_game_task'],
+		)
+	
+	@task
+	def write_sports_article_task(self) -> Task:
+		return Task(
+			config=self.tasks_config['write_sports_article_task'],
 		)
 
 	@crew

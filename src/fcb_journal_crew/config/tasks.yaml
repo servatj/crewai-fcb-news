@@ -14,3 +14,15 @@ fetch_next_game_task:
     The next game for {team_name} is against [Opponent Name] on [Date] at [Time],
     to be held at [Venue].
   agent: sports_analyst
+
+write_sports_article_task:
+  description: >
+    Write a sports article based on the latest sports news and events.
+    Your article should be engaging and insightful, providing a fresh perspective
+    on the sports events of the day.
+  expected_output: >
+    A well-written sports article that captures the essence of the latest sports
+    news and events, providing a unique perspective on the subject matter.
+  output_file: >
+   sports_article.txt  
+  agent: sports_writer  
