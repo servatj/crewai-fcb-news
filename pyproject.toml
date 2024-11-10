@@ -1,0 +1,24 @@
+[project]
+name = "fcb_journal_crew"
+version = "0.1.0"
+description = "fcb-journal-crew using crewAI"
+authors = [
+    { name = "Your Name", email = "you@example.com" },
+]
+requires-python = ">=3.10,<=3.13"
+dependencies = [
+    "crewai[tools]>=0.76.9,<1.0.0",
+]
+
+[project.scripts]
+fcb_journal_crew = "fcb_journal_crew.main:run"
+run_crew = "fcb_journal_crew.main:run"
+train = "fcb_journal_crew.main:train"
+replay = "fcb_journal_crew.main:replay"
+test = "fcb_journal_crew.main:test"
+
+[build-system]
+requires = [
+    "hatchling",
+]
+build-backend = "hatchling.build"

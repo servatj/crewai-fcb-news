@@ -1,0 +1,16 @@
+fetch_next_game_task:
+  description: >
+    Find and report the next scheduled game of the team specified below:
+
+    Team: {team_name}
+
+    The output should include:
+    - Opponent's name
+    - Date and time of the match
+    - Venue
+
+    Your final output MUST be a short paragraph summarizing the information.
+  expected_output: >
+    The next game for {team_name} is against [Opponent Name] on [Date] at [Time],
+    to be held at [Venue].
+  agent: sports_analyst
