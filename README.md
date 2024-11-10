@@ -1,6 +1,6 @@
 # FcbJournalCrew Crew
 
-Welcome to the FcbJournalCrew Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
+This project aims to create a crew of AI agents to gather, process, and publish posts as Markdown files on a blog. Powered by [crewAI](https://crewai.com), this template simplifies the setup of a multi-agent AI system, enabling effective collaboration on complex tasks to maximize their collective intelligence and capabilities. I'm using a fcb to focus on building one use case but eventually it will be 
 
 ## Installation
 
