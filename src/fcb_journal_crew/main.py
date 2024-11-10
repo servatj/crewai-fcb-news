@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import sys
 from fcb_journal_crew.crew import FcbJournalCrewCrew
+from datetime import datetime
 
 # This main file is intended to be a way for you to run your
 # crew locally, so refrain from adding unnecessary logic into this file.
@@ -12,7 +13,8 @@ def run():
     Run the crew.
     """
     inputs = {
-        'team_name': 'fcb'
+        'team_name': 'fcb',
+        'current_date': datetime.now().strftime('%Y-%m-%d')
     }
     FcbJournalCrewCrew().crew().kickoff(inputs=inputs)
 

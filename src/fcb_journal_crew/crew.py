@@ -1,11 +1,7 @@
-
-import os
-
 from dotenv import load_dotenv
 load_dotenv()
 
-os.environ["SERPER_API_KEY"] = os.getenv("SERPER_API_KEY")
-
+import os
 
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
@@ -19,8 +15,8 @@ class FcbJournalCrewCrew():
 	@agent
 	def sports_analyst(self) -> Agent:
 		return Agent(
-				config=self.agents_config['sports_analyst'],  # Matches the 'sports_analyst' in agents.yaml
-				tools=[SerperDevTool()],  # Example of tool for fetching game details
+				config=self.agents_config['sports_analyst'],
+				tools=[SerperDevTool()],
 				verbose=True
 		)
 	

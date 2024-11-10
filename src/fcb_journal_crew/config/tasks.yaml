@@ -10,6 +10,7 @@ fetch_next_game_task:
     - Venue
 
     Your final output MUST be a short paragraph summarizing the information.
+    favour la liga.com result and we are at date {current_date}.
   expected_output: >
     The next game for {team_name} is against [Opponent Name] on [Date] at [Time],
     to be held at [Venue].
