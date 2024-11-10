@@ -1,5 +1,7 @@
 # FcbJournal crew CrewAI
 
+![image](https://github.com/user-attachments/assets/2af0cc39-348a-4c45-b70d-4a792cc5bd7b)
+
 This project aims to create a crew of AI agents to gather, process, and publish posts as Markdown files on a blog. Powered by [crewAI](https://crewai.com), this template simplifies the setup of a multi-agent AI system, enabling effective collaboration on complex tasks to maximize their collective intelligence and capabilities. I'm using a fcb to focus on building one use case but eventually it will be 
 
 ## Installation
