@@ -47,6 +47,9 @@ The fcb-journal-crew Crew is composed of multiple AI agents, each with unique ro
 
 ## Support
 
+![image](https://github.com/user-attachments/assets/a391ba71-1994-4d61-b29d-e81243734779)
+
+
 For support, questions, or feedback regarding the FcbJournalCrew Crew or crewAI.
 - Visit our [documentation](https://docs.crewai.com)
 - Reach out to us through our [GitHub repository](https://github.com/joaomdmoura/crewai)
